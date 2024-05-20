@@ -1,5 +1,7 @@
 import Menu from '../../layouts/Menu';
 function Painel() {
+
+
     return (
         <div className="container mt-5">
           <Menu />
