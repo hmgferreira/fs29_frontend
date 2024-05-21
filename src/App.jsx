@@ -8,8 +8,7 @@ export const AuthContext = createContext();
 function App() {
 
   const[logado, setLogado] = useState(false);
-  return (
-
+  return ( 
     <AuthContext.Provider value={{ logado, setLogado }}>
       {logado ? <AppRoutes /> : <Login />}
     </AuthContext.Provider>

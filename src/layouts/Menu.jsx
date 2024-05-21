@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../App";
+import { Link } from "react-router-dom";
 
 function Menu() {
 
@@ -16,13 +17,13 @@ function Menu() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Painel</a>
+                        <Link className="nav-link" to="/">Painel</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Produtos</a>
+                        <Link className="nav-link" to="/produtos">Produtos</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Categorias</a>
+                        <Link className="nav-link" to="/categorias">Categorias</Link>
                     </li>
                     <li className="nav-item">
                         <a onClick={() => setLogado(false)}  className="nav-link" aria-disabled="true">Sair</a>
